@@ -1,12 +1,14 @@
-Developed a Streamlit ChatBot
-This system is developed using streamlit and openai key .
-Install Streamlit:
+1. Developed a Streamlit ChatBot
+   
+2. This system is developed using streamlit and openai key .
+   
+3. Install Streamlit:
            pip install streamlit
-Install OpenAi 
+4. Install OpenAi 
            pip install openai==0.28
-clone the repository: 
+5. clone the repository: 
           "git clone https://github.com/mimansha11/StreamLit_ChatBot"
-Get your OpenAi Key:
+6. Get your OpenAi Key:
            https://platform.openai.com/docs/overview
-Open your terminal and run "streamlit run app.py"
-Streamlit Documentation "https://docs.streamlit.io/"
+7. Open your terminal and run "streamlit run app.py"
+8. Streamlit Documentation "https://docs.streamlit.io/"
