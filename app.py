@@ -1,8 +1,8 @@
 import streamlit as st
-import openai
+import openai import OpenAI
 import os
 
-
+client = OpenAI()
 openai.api_key = os.getenv("OPEN_AI_API")  # Replace with your key for local testing
 
 # Streamlit app
@@ -20,12 +20,12 @@ user_input = st.text_input("Ask me anything:")
 # Chatbot response
 if st.button("Send"):
     if not openai.api_key:
-        st.error("API key not found. Please provide your NVIDIA API key in the settings.")
+        st.error("API key not found. Please provide your OPENAI API key in the settings.")
     elif user_input.strip() == "":
         st.warning("Please enter a question or prompt.")
     else:
         try:
-            response = openai.ChatCompletion.create(
+            response = client.chat.completion.create(
                 model="gpt-3.5-turbo",  
                 messages=[{"role": "user", "content": user_input}],
                 max_tokens=150
