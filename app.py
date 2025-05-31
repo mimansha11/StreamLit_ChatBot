@@ -3,7 +3,7 @@ from openai import OpenAI
 import os
 
 client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
-openai.api_key = os.getenv("OPEN_AI_API")  # Replace with your key for local testing
+#openai.api_key = os.getenv("OPEN_AI_API")  # Replace with your key for local testing
 
 # Streamlit app
 st.title("Chatbot with Streamlit")
